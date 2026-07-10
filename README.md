@@ -1,50 +1,41 @@
-# Welcome to your Expo app 👋
+# ChitChat
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A real-time chat application built with [Expo SDK 54](https://expo.dev) and React Native.
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Quick Start
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Scan the QR code with Expo Go, or press `a` (Android) / `i` (iOS) / `w` (web).
 
-## Learn more
+## Documentation
 
-To learn more about developing your project with Expo, look at the following resources:
+Full documentation is available in the [`docs/`](docs/) folder:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+| Document | Description |
+|----------|-------------|
+| [Getting Started](docs/getting-started.md) | Setup, installation, and running |
+| [Architecture](docs/architecture.md) | Tech stack and design decisions |
+| [Project Structure](docs/project-structure.md) | File and folder layout |
+| [Development Guide](docs/development-guide.md) | Coding conventions and workflows |
 
-## Join the community
+## Tech Stack
 
-Join our community of developers creating universal apps.
+- **Framework**: Expo SDK 54, React Native 0.81.5, React 19.1.0
+- **Navigation**: Expo Router 6 (file-based routing)
+- **Language**: TypeScript 5.9 (strict mode)
+- **Bundler**: Metro
+- **Linting**: ESLint 9 + `eslint-config-expo`
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start the dev server |
+| `npm run android` | Start with Android |
+| `npm run ios` | Start with iOS |
+| `npm run web` | Start with web |
+| `npm run lint` | Run ESLint |
